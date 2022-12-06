@@ -4,10 +4,19 @@ with open('input/day06input.txt') as f:
 
 characters = lines[0]
 
-example_input = ['bvwbjplbgvbhsrlpgdmjqwftvncz\n']      # 5
-#example_input = ['nppdvjthqldpwncqszvftbrmjlhg\n']      # 6
+# PART 2
+for i in range(1, len(characters)):
+    four = characters[i:i+4]
+    if(len(set(four)) == 4):
+        print(4+i)
+        break
 
-count = 4
 
+# PART 2
+for i in range(1, len(characters)):
+    fourteen = characters[i:i+14]
+    if(len(set(fourteen)) == 14):
+        print(14+i)
+        break
 
 

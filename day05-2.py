@@ -44,7 +44,6 @@ for instruction in instructions:
         i += 1
 
     for item in range(len(move)):
-        
         stack_map[int(instruction[5])].append(move.pop())
 
 for i, a in stack_map.items():

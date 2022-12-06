@@ -1,6 +1,7 @@
 with open('input/day04input.txt') as f:
     lines = f.readlines()
 
+
 stripped = [s.strip() for s in lines]
 
 count = 0
@@ -19,4 +20,3 @@ for entry in stripped:
     
 
 print('Number of assignment pairs where one range fully contain the other: {}'.format(count))
-
